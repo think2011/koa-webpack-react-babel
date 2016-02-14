@@ -30,7 +30,7 @@ var webpackCfg = {
         loaders: [
             {
                 test  : /\.jsx?$/,
-                loader: 'babel'
+                loader: 'babel?compact=false'
             },
             {
                 test   : /\.css/,
