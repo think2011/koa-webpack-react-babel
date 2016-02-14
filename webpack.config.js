@@ -36,7 +36,8 @@ var webpackCfg = {
                 test   : /\.css/,
                 loaders: [
                     'style',
-                    'css'
+                    'css',
+                    'autoprefixer'
                 ]
             },
             {
@@ -44,6 +45,7 @@ var webpackCfg = {
                 loaders: [
                     'style',
                     'css',
+                    'autoprefixer',
                     'sass'
                 ]
             }
