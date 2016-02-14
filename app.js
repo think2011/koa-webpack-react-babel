@@ -11,7 +11,6 @@ const compiler = webpack(webpackCfg);
 const PORT     = process.env.PORT || 3000;
 
 app.use(serve('./app'));
-app.use(serve('./dist'));
 
 app.use(webpackDevMiddleware(compiler, {
     noInfo    : true,

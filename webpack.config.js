@@ -9,8 +9,8 @@ module.exports = {
         './app/index'
     ],
     output : {
-        path      : path.join(__dirname, 'dist'),
-        filename  : 'bundle.js'
+        path    : path.join(__dirname, 'dist'),
+        filename: 'bundle.js'
     },
     resolve: {
         extensions: ['', '.js', '.jsx']
@@ -25,6 +25,13 @@ module.exports = {
             {
                 test  : /\.jsx?$/,
                 loader: 'babel'
+            },
+            {
+                test   : /\.css/,
+                loaders: [
+                    'style',
+                    'css'
+                ]
             },
             {
                 test   : /\.scss/,
