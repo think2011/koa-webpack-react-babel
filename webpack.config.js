@@ -6,7 +6,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const DEBUG = process.env.NODE_ENV === 'DEBUG';
 
 const paths = {
-    src : './app',
+    src : './src',
     dist: './dist'
 };
 
